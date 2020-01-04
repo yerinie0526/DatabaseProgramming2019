@@ -1,0 +1,93 @@
+@charset "EUC-KR";
+
+/*topbar*/
+.topbar {
+  background-color: #474559;
+}
+.top {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 999;
+}
+.content-topbar {
+  min-height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {max-width: 1080px;}
+
+.left-topbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 13px;
+  margin-right: 13px;
+}
+.right-topbar {
+    margin-left: -4px;
+    margin-right: -130px;
+}
+
+.right-topbar a {
+    font-size: 14px;
+    color: #ffffff;
+   	line-height: 1.8;
+    margin: 0 0px;
+    background-color: transparent;
+  border: 1px solid transparent;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out,
+		border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.right-topbar a:hover {
+    color: #ffc200;
+}
+
+.left-topbar-item {
+  font-family: Roboto-Regular;
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 1.8;
+  padding: 0 13px;
+  position: relative;
+  
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out,
+		border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  text-decoration: none;
+}
+
+a.left-topbar-item:hover {
+  color: #ffc200;
+}
+
+.left-topbar-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  background-color: #fff;
+  opacity: 0.1;
+  left: 0;
+  top: calc(50% - 5px);
+}
+
+.left-topbar-item:first-child:before {
+  display: none;
+}
+.left-topbar, .right-topbar {
+  justify-content: flex-start;
+}
